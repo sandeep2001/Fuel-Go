@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}
+    Login
+{% endblock %}
+{% block content%}
+
+<head>  
+<link rel = "icon" href = "../static/images/icon.png" type = "image/x-icon">  
+<link rel="stylesheet" type="text/css" href="../static/styles/styling.css">   
+</head>
+
+<form method = "POST">
+<body>   
+        <center> <h1 style="color: rgb(11, 17, 202); font-family: Yeseva One;"> Client Login </h1> </center>    
+        <div class="container_long_page">   
+            <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="user">Username: </label>
+              <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Enter Username"
+                  required
+              >
+            <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="password">Password: </label>
+              <input
+                  type="password"
+                  id="password1"
+                  name="password1"
+                  placeholder="Enter password"
+                  required
+              >
+
+            <br> <br> <input type="checkbox" checked> Remember me <br>
+            <button type="submit">LOGIN</button> <br>
+            <center>       
+            <h1 style="font-size:large" style="color:rgb(4, 0, 255)">Don't have an account? <a href="/registration"> Register Here </a>  </h1>
+            </center>
+        </div>        
+</body>     
+
+</form>
+{% endblock %}

@@ -1,0 +1,364 @@
+body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: lightblue;  
+  margin: 0;
+  padding: 20;
+  background-image: url("../images/Roads2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url('Roads.jpg'); */
+}
+
+
+.navigation {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: rgb(43, 42, 42);
+  padding-bottom: 0.3rem;
+  margin-bottom: 20px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.header-logo{
+  padding-top: 10px; 
+  padding-left: 30px; 
+  width: 10rem;
+  float: left; 
+}
+
+
+/* NAV TAB */
+nav {
+  margin-top: 0px;
+  padding: 24px;
+  background:rgb(43, 42, 42);
+  position: relative;
+}
+
+nav a {
+  transition: 0.3s ease;
+  color: white;
+  font-size: 22px;
+  font-family: 'Gill Sans';
+  text-decoration: none;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  padding: 20px 10px;
+  margin: 0 5px;
+  position: relative;
+}
+
+nav a:hover {
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0; 
+  position: relative;
+}
+
+
+
+
+/* FOOTER */
+
+.box{
+  width: auto;
+  height: auto;
+  font-family: 'Gill Sans';
+}
+
+.footer-container{
+  padding-top: 10px;
+  padding-left: 100px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+
+ 
+footer {
+  padding-top: 20px;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px; 
+  /* text-align: center;*/ 
+  padding: 3px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(43, 42, 42);
+  color: white;
+} 
+
+footer::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.footer-logo{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px; 
+  width: 10rem;
+  float: left; 
+}
+
+
+button {   
+  background-color: #4CAF50;   
+  width: 100%;  
+  color: white;   
+  padding: 15px;   
+  margin: 10px 0px;   
+  border: none;   
+  cursor: pointer;   
+}   
+      
+input[type=text],input[type=email], input[type=date], input[type=number], input[type=password] {   
+  width: 100%;   
+  margin: 8px 0;  
+  padding: 10px 20px;   
+  box-shadow: 0 0 5px 1px;
+  border-radius: 10px; 
+  display: inline-block;
+  border: 5px solid lightblue; 
+  box-sizing: border-box;    
+  background-color: rgba(255, 255, 255, 0.9);
+}   
+   
+button:hover {   
+  opacity: 17;   
+}
+
+.container {
+  height:auto;
+  width: auto;  
+  margin: auto;
+  /* margin-top: 10px;   */
+
+  padding: 30px;  
+  padding-bottom: auto;
+  background: rgba(255, 255, 255, 0.75);  
+  border-radius: 15px ;
+}
+
+.container_long_page {
+  height:auto;
+  width: auto;  
+  margin: auto; 
+  padding: 30px;  
+  padding-bottom: 100px;
+  background: rgba(255, 255, 255, 0.75);  
+  border-radius: 15px ;
+}
+
+
+#page {
+  margin-bottom: 61px;
+}
+
+
+.state {
+  padding: 2.5px;
+}
+
+
+
+table {
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.20);
+  text-align: center;
+  width: auto;
+}
+
+
+/* FOR FUEL HISTORY */
+/* .tablebox {
+    width: 550px;  
+    overflow: auto;  
+    margin: auto;  
+    padding: 30px;  
+    background: rgba(255, 255, 255, 0.75);  
+    border-radius: 15px ;
+} */
+
+
+.tablebox {
+  width: auto;  
+  overflow: auto;  
+  margin: auto;  
+  padding: 30px;  
+}
+
+.tablebox thead tr{
+  background-color: #009879;
+}
+
+
+
+.tablebox tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.tablebox tbody tr:nth-of-type(odd){
+  background-color: #0808080e;
+}
+
+.tablebox tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+
+
+
+/* FOR About US */
+
+.tablebox2 {
+  width: auto;  
+  overflow: auto;  
+  margin: auto;  
+  padding: 20px;  /*Sets the boundary lines for the About US table..*/
+}
+
+.tablebox2 thead tr{
+  background-color: #009879;
+}
+
+
+
+.tablebox2 th, td{
+   padding: 12px 15px;
+}
+
+.tablebox2 tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.tablebox2 tbody tr:nth-of-type(odd){
+  background-color: #0808080e;
+}
+
+.tablebox2 tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+
+
+/* Assignment Page */
+
+.box12 {
+  background-color: white; /* Changing background color */
+  opacity: 0.6;
+  font-weight: bold; /* Making font bold */
+  border-radius: 20px; /* Making border radius */
+  width: auto; /* Making auto-sizable width */
+  height: auto; /* Making auto-sizable height */
+  padding: 5px 30px 5px 30px; /* Making space around letters */
+  font-size: 20px; /* Changing font size */
+  text-align: left;
+}
+
+
+
+
+/* SOCIAL MEDIA ICONS */
+
+.social_container {
+  width: auto;  
+  height: auto;
+  overflow: hidden;  
+  margin: auto;  
+  padding: 30px;  
+  background: rgba(177, 224, 238, 0.411);  
+  border-radius: 15px ;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}

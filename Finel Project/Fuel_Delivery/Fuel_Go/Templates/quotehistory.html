@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}
+    Quote History
+{% endblock %}
+{% block content%}    
+
+<head>  
+<link rel = "icon" href = "../static/images/icon.png" type = "image/x-icon">
+<link rel="stylesheet" type="text/css" href="../static/Styles/styling.css">   
+</head>
+
+<form method = "POST">
+<body>
+        <center> <h1 style="color: rgb(11, 17, 202); font-family: Yeseva One;">Fuel Quote History</h1> </center>   
+        <div class="tablebox">
+          <center>
+            <table>
+                <thead>
+                  <tr>
+                      <center>
+                      <th style="width: 200px;">Delivery Date</th>
+                      <th style="width: 200px;">Delivery Address</th>
+                      <th style="width: 150px;">Gallons Requested</th>
+                      <th style="width: 150px;">Suggested Price Per Gallon</th>
+                      <th style="width: 150px;">Total Amount Due</th>
+                      </center>
+                  </tr>
+                  </thead>
+                <tbody>
+                  {% for order in history_list %}
+                    <tr>
+                      <td>{{ order.date }}</td>
+                      <td>{{ order.delivery_address }}</td>
+                      <td>{{ order.gallons_requested }}</td>
+                      <td>$ {{ order.suggest_price }}</td>
+                      <td>$ {{ order.total_price }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+
+            </table>
+          </center>
+        </div>
+</body>
+
+</form>
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}
+    About Us
+{% endblock %}
+{% block content%}
+
+<head>  
+    <link rel = "icon" href = "../static/images/icon.png" type = "image/x-icon">  
+    <link rel="stylesheet" type="text/css" href="../static/styles/styling.css"> 
+    </head>
+
+
+    <form method = "POST">
+
+        <center><h1 style="color: rgb(11, 17, 202); font-size: 40px ; font-family: 'Times New Roman', Times, serif;">About Us</h1> </center>        
+        
+        <body>   
+            <div class="tablebox2">
+                <center>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 200px;">Name</th>
+                                <th style="width: 200px;">Major</th>
+                                <th style="width: 200px;">Concentration</th>
+                                <th style="width: 100px;">UH ID</th>
+                                <th style="width: 200px;">Email</th>
+                                <th style="width: 200px;">Contact</th>
+                            </tr>
+                            </thead>
+                        <tbody>
+                             
+                            <tr>
+                                <td>Tasneem Patel</td>
+                                <td>Computer Science</td>
+                                <td>Software Engineering</td>
+                                <td>1908409</td>
+                                <td>tasneemipatel16@gmail.com</td>
+                                <td>(832) 946 2407</td>
+                            </tr>
+
+                            <tr>    
+                                <td>Jenish Bhadola</td>
+                                <td>Computer Science</td>
+                                <td>Software Engineering</td>
+                                <td>1904710</td>
+                                <td>Jenishbhadola@gmail.com</td>
+                                <td>(346) 232 1442</td>
+                            </tr>
+
+                            <tr>
+                                <td>Satya Sai Sribhashyam</td>
+                                <td>Computer Science</td>
+                                <td>Software Engineering</td>
+                                <td>1855846</td>
+                                <td>sandeepsribhashyam@gmail.com</td>
+                                <td>(832) 790 2941</td>
+                            </tr>
+
+                            </div>
+                        </tbody>
+                    </table>
+                </center>
+             </div>
+        </body>    
+        <br>
+        <br>
+        <body>
+            <div class="container">
+
+
+                <center><h1 style="color: rgb(11, 17, 202); font-size: 40px ; font-family: 'Times New Roman', Times, serif;">Developers:</h1>
+                <br>
+                
+                <div class="container" style="background-color: rgba(52, 51, 51, 0.151);">
+                    <p style = "font-size: 25px; font-family: 'Times New Roman', Times, serif;"> Jenish Bhadola
+                        <br>
+                        <a href="../static/Files/Resumes/Bhadola Resume.docx" target="blank" style="font-family: 'Times New Roman', Times, serif;">Resume</a>
+                    </p>  
+                </div>
+
+                <br>
+                <br>
+
+                <div class="container" style="background-color: rgba(52, 51, 51, 0.151);">
+                    <br>
+                    <p style = "font-size: 25px; font-family: 'Times New Roman', Times, serif;"> Satya Sai Sribhashyam
+                        <br>
+                        <a href="../static/Files/Resumes/Sribhashyam Resume.docx" target="blank" style="font-family: 'Times New Roman', Times, serif;">Resume</a>
+                    </p>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="container" style="background-color: rgba(52, 51, 51, 0.151);">
+                    <br>
+                    <p style = "font-size: 25px; font-family: 'Times New Roman', Times, serif;"> Tasneem Patel
+                        <br>
+                        <a href="../static/Files/Resumes/Patel Resume.docx" target="blank" style="font-family: 'Times New Roman', Times, serif;">Resume</a>
+                    </p>
+                </div>
+        
+            </center>
+            </div>
+        </body>
+
+    </form>
+{% endblock %}

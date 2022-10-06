@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}
+    Quote Result
+{% endblock %}
+{% block content%}   
+
+<head>  
+<link rel = "icon" href = "../static/images/icon.png" type = "image/x-icon"> 
+<link rel="stylesheet" type="text/css" href="../static/Styles/styling.css">   
+</head>
+
+<form method = "POST">
+<body>
+    <br> <br> <center> <h1 style="color: black; font-family: Yeseva One;">FUEL QUOTE RESULT</h1> </center>   
+        <div class="container">
+                <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="Total_Gallons_Requested">Gallons Requested: </label>
+                {{gallons_requested}}
+                <br>
+                <br>
+                <label  style="font-size:larger" style="color:rgb(0, 0, 0)" for="address1">Delivery Address: </label>
+                {{delivery_address}}
+                <br>
+                <br>
+                <label  style="font-size:larger" style="color:rgb(0, 0, 0)" for="Order_date">Delivery Date: </label>
+                {{delivery_date}}
+                <br>
+                <br>
+                <label  style="font-size:larger" style="color:rgb(0, 0, 0)" for="Suggested_price"><b>Suggested Price Per Gallon: </b></label>
+                {{suggest_price}}
+                <br>
+                <br>
+                <label  style="font-size:larger" style="color:rgb(0, 0, 0)" for="Total_price"><b>Total Amount Due: </b></label>
+                {{total_price}}
+                <br>
+                <br>
+            </div>
+
+
+            <button type="submit">SUBMIT QUOTE</button>               
+        </div>
+</body>
+
+
+</form>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}
+    My Profile
+{% endblock %}
+{% block content%}
+  
+<head>  
+<link rel = "icon" href = "../static/images/icon.png" type = "image/x-icon">
+<link rel="stylesheet" type="text/css" href="../static/Styles/styling.css">   
+</head>
+
+<form method = "POST">
+            <body>
+                
+                <form id="viewprofile" method="POST" action="#">   
+                    <center> <h1 style="color: rgb(11, 17, 202); font-family: Yeseva One;">My Profile</h1> 
+
+                    <div class="container_long_page">
+                
+                        <div class="inputData">
+
+                            <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="fullname">Full Name: </label>
+                                <input 
+                                    style="width: auto;"    
+                                    type="text" 
+                                    value = "{{full_name}}"
+                                    readonly
+                                >
+                            <br><br>
+
+                            <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="address">Address: </label>
+                                <input 
+                                    style="width: auto;"    
+                                    type="text" 
+                                    value = "{{address}}"
+                                    readonly
+                                >
+                            <br><br>                
+
+                            <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="city">City: </label>
+                                <input 
+                                    style="width: auto;"    
+                                    type="text" 
+                                    value = "{{city}}"
+                                    readonly
+                                >
+                            <br> <br>
+
+                            <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="state">State: </label>
+                                <input 
+                                    style="width: auto;"    
+                                    type="text" 
+                                    value = "{{state}}"
+                                    readonly
+                                >
+                            <br><br>
+
+                            <label style="font-size:larger" style="color:rgb(0, 0, 0)" for="zipcode">Zipcode: </label>
+                                <input 
+                                    style="width: auto;"    
+                                    type="text" 
+                                    value = "{{zipcode}}"
+                                    readonly
+                                >
+
+
+                        </div>                      
+                   </div>
+                 </form>
+                </center>
+           </body>
+         </form>
+   </body>
+
+</form>
+{% endblock %}
