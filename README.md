@@ -1,10 +1,4 @@
-COSC 4353 Software Design with Raj Singh 
-
-This is Group 10: Jenish Bhadola, Satya Sai Sribhashyam, Tasneem Patel 
-
-
-
-						Welcome to Fuel Go!!! 
+Welcome to Fuel Go!!! 
 
 
 Fuel Go is a fuel delivery website application that calculates the price of fuel based on the amount of fuel requested, the client's location, history, and the company's profit margin. 
